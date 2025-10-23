@@ -1,4 +1,4 @@
-package com.suaempresa.impostos.model;
+package model;
 
 public class Orcamento {
 
@@ -11,7 +11,6 @@ public class Orcamento {
     private String ufDestino; 
     private double aliquotaIssPraticada; 
 
-    // Construtor
     public Orcamento(double valorProduto, double valorServico, double frete, double seguro, 
                      double margemLucro, String ufOrigem, String ufDestino, double aliquotaIssPraticada) {
         this.valorProduto = valorProduto;
@@ -24,7 +23,6 @@ public class Orcamento {
         this.aliquotaIssPraticada = aliquotaIssPraticada;
     }
 
-    // Getters
     public double getValorProduto() { return valorProduto; }
     public double getValorServico() { return valorServico; }
     public double getFrete() { return frete; }
@@ -33,4 +31,4 @@ public class Orcamento {
     public String getUfOrigem() { return ufOrigem; }
     public String getUfDestino() { return ufDestino; }
     public double getAliquotaIssPraticada() { return aliquotaIssPraticada; }
-}	
+}

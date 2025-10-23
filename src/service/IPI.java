@@ -1,7 +1,6 @@
-package com.suaempresa.impostos.service.strategy;
+package service;
 
-import com.suaempresa.impostos.model.Orcamento;
-
+import model.Orcamento;
 
 public class IPI implements Imposto {
 
@@ -10,7 +9,7 @@ public class IPI implements Imposto {
         double baseCalculo = orcamento.getValorProduto() + 
                              orcamento.getFrete() + 
                              orcamento.getSeguro();
-    
+        
         return baseCalculo * 0.0015; 
     }
 }

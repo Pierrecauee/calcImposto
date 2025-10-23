@@ -1,7 +1,6 @@
-package com.suaempresa.impostos.service.strategy;
+package service;
 
-import com.suaempresa.impostos.model.Orcamento;
-
+import model.Orcamento;
 
 public class ICMS implements Imposto {
 
@@ -18,7 +17,7 @@ public class ICMS implements Imposto {
         else if ("SP".equalsIgnoreCase(origem) && "DF".equalsIgnoreCase(destino)) {
             aliquota = 0.07;
         }
-
+        
         return orcamento.getValorProduto() * aliquota;
     }
 }

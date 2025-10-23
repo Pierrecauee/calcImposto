@@ -1,9 +1,5 @@
-package com.suaempresa.impostos.service.strategy;
+package service;
 
-import com.suaempresa.impostos.model.Orcamento;
+public class Imposto {
 
-
-public interface Imposto {
-    
-    double calcular(Orcamento orcamento);
 }

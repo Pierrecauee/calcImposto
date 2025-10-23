@@ -1,13 +1,11 @@
-package com.suaempresa.impostos.service.strategy;
+package service;
 
-import com.suaempresa.impostos.model.Orcamento;
-
+import model.Orcamento;
 
 public class ISS implements Imposto {
 
     @Override
     public double calcular(Orcamento orcamento) {
-      
         return orcamento.getAliquotaIssPraticada() * orcamento.getValorServico();
     }
 }
